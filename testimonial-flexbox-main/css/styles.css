@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1.900&display=swap');
+
+
+/* Estilos generales*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif
+}
+body {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #19212e;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 9.5px;
+    margin-bottom: 10px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 8px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 7px;
+}
+
+img {
+    max-height: 25px;
+    max-height: 25px;
+    border-radius: 50%;
+}
+p {
+    font-size: 7.5px;
+    font-weight: 400;
+}
+
+
+/*Estilos por clases*/
+
+
+.container {
+    background-color: #ecf2f8;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.first-information {
+    display: flex;
+    gap: 1rem;
+}
+
+.second-information {
+    display: flex;
+    gap: 1rem;
+} 
+
+/* estilos para las cards en general*/
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.card > div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.second-information {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.last-info {
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.last-info > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Estilos para cada carta independiente */
+.first-information .card:nth-child(1) h3 {
+    color: #19191abe;
+    font-size: 7px;
+}
+.first-information .card:nth-child(1) {
+    background-color: #7541c8;
+    color: #efeff1;
+    flex-basis: 950px;
+}
+
+.first-information .card:nth-child(2) {
+    background-color: #48556af3;
+    flex-basis: 350px;
+    color: #efeff1;
+}
+
+.first-information .card:nth-child(1) h2 {
+    font-size: 8px;
+}
+
+/*2nd Child */
+.first-information .card:nth-child(2) h1 {
+    font-size: 9px;
+}
+.first-information .card:nth-child(2) h3 {
+    color: #ecf2f8cb;
+}
+
+
+
+/*second information*/
+
+/*1st Child*/
+
+.second-information .card:nth-child(1) {
+    background-color:  #19212e;
+    flex-basis: 850px;
+}
+.second-information .card:nth-child(1) h1 {
+    color: #ecf2f8;
+}
+.second-information .card:nth-child(1) h2 {
+    color: #ecf2f8;
+}
+.second-information .card:nth-child(1) p {
+    color: #ecf2f8
+}
+.second-information .card.card:nth-child(1) h3{
+    color: #cfcfcf;
+}
+/*2nd Child*/
+
+.second-information .card:nth-child(2) {
+    background-color: #ecf2f8;
+    box-shadow: #cfcfcf 0px 0px 15px;
+}
+
+
+/*Last Information*/
+
+.last-info {
+    background-color: #ecf2f8;
+    box-shadow: #cfcfcf 0px 0px 15px; 
+    flex-basis: 600px;
+}
+.last-info p  {
+    color: #6d6c6c;
+}
